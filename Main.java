@@ -1,5 +1,19 @@
 import java.util.*;
 
+// ver comentarios do evandro
+// BFS -> explora o grafo nível por nível com fila e pode encontrar caminho mais curto de um no para outro
+// DFS -> explora o grafo nível por nível com pilha e pode encontrar caminho mais curto de um no para outro
+// Dijkstra -> pode encontrar o caminho mais curto entre um nó e todos os outros em um grafo ponderado direcionado usando o relaxamento de arestas
+// Relaxamento -> Está em um nó u, se o caminho até um nó v vizinho for menor que o caminho menor conhecido, atualiza o valor do caminho mais curto e o predecessor
+// Bellman-ford -> igual dijkstra, mas funciona para pesos negativos e detecta ciclos negativos
+// kruskal -> encontra arvore geradora minima (conjunto de arestas de menor custo q conecta todos vertices sem formar ciclo)
+// unionfind é dificil, só saber que find encontra o conjunto em q um vertice ta e que union une os conjuntos de 2 vertices, os conjuntos sao pra evitar ciclos
+// max-heap: arvore bianria q o maior valor fica na raiz
+// heapsort -> ordena um array: transforma em max-heap, ou seja, maior valor vai pra 1a posicao (raiz do heap), dps troca esse valor com o ultimo do array, diminui o tamanho do heap (ignorando o último), e repete até ordenar.
+// MinHeap -> estrutura de heap que mantém o menor valor na raiz, usada como fila de prioridade no Dijkstra
+// No Dijkstra, o MinHeap guarda os vértices e permite extrair o de menor distância rapidamente
+// Quando um vértice tem a distância reduzida (relaxamento), o MinHeap reorganiza com decreaseKey
+
 public class Main {
 
     private static final String SEPARADOR_LINHA = "\n----------------------------------------------------\n";
